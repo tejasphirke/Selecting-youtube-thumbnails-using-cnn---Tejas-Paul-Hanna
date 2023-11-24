@@ -1,1 +1,1 @@
-# neural_network
+# Selecting youtube thumbnails using cnn
