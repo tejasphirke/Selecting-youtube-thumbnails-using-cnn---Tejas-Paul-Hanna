@@ -23,3 +23,12 @@ https://dergipark.org.tr/en/download/article-file/1652393
 
 From the frames in the video it will convert frames to images. Based on small images it will preprocess the images of the people and it will detect the emotions of the people based on the repeating faces in the images
 Creating cover photos of a movie or TV series using image processing and convolutional neural networks. These cover photos were selected based on mpst repeating faces and frames were labeled to attract the users' attention.
+
+### Project Questions
+Based on the YouTube channels which thumbnails represent which channel?
+Given the YouTube channels, which thumbnails are considered ‘good’ for getting a better view?
+How CNN could be used on the thumbnails and by using the model how we can predict the labels for the images?
+
+
+### Modeling Process
+
