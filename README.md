@@ -27,9 +27,9 @@ From the frames in the video it will convert frames to images. Based on small im
 Creating cover photos of a movie or TV series using image processing and convolutional neural networks. These cover photos were selected based on mpst repeating faces and frames were labeled to attract the users' attention.
 
 ### Project Questions
-Based on the YouTube channels which thumbnails belong to which channel?
-Given the YouTube channels, which thumbnails are considered ‘good’ for getting a better view?
-How CNN could be used on the thumbnails and How CNN works for selecting thumbnails for youtube creators to choose a better thumbnail?
+1. Based on the YouTube channels which thumbnails belong to which channel?
+2. Given the YouTube channels, which thumbnails are considered ‘good’ for getting a better view?
+3. How CNN could be used on the thumbnails and How CNN works for selecting thumbnails for youtube creators to choose a better thumbnail?
 
 
 ### Modeling Process
