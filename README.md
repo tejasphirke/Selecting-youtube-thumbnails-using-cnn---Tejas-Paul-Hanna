@@ -60,6 +60,7 @@ It is shared with a cleaned dataset file named clean_data_1’ which is a clean 
 - We merged two datasets:  data and metadata based on the youtube id named ‘merged_data_metadata’. 
 Now we are left with 2015 rows, which means we have the data with YouTube id’s as well as URLs.
 
+(Future Steps at December 4th, 2023)
 
 #### Step 2 - Pre-Training the thumbnails using transfer learning:
 
