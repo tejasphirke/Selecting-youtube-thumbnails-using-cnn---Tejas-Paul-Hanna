@@ -6,7 +6,9 @@
 
 ### Introduction
 
-We are using a model based on research already done by the CS dept of Stanford University. We are planning to build a model that will categorize the thumbnails from the thumbnails of the videos. We are going to train the model using thumbnails of videos. We will differentiate successful vs unsuccessful videos based on the number of views the video acquired. Any video with more than 1M views is considered successful and videos less than 1000 views are considered unsuccessful.
+We are using a model based on research already done by the CS dept of Stanford University. We are planning to build a model that will select the best thumbnail from the frames of a given video.We are going to train the model with both successful and unsuccessful videos and their respective thumbnails to extract the features that indicate the success of a video. We will differentiate successful vs unsuccessful videos based on the number of views the video acquired. Any video
+with more than 1M views is considered successful and videos less than 1000 views are considered
+unsuccessful.
 
 To mitigate the selection bias, we will collect the videos data in the same time frame, randomly build datasets for successful and unsuccessful thumbnails and then we will build a classifier to differentiate between successful and unsuccessful thumbnails. From the learnings of this classification architecture we will build a model that will select thumbnails by choosing from each video the frames that have the highest probability of being good thumbnails.
 
@@ -25,9 +27,9 @@ From the frames in the video it will convert frames to images. Based on small im
 Creating cover photos of a movie or TV series using image processing and convolutional neural networks. These cover photos were selected based on mpst repeating faces and frames were labeled to attract the users' attention.
 
 ### Project Questions
-Based on the YouTube channels which thumbnails represent which channel?
+Based on the YouTube channels which thumbnails belong to which channel?
 Given the YouTube channels, which thumbnails are considered ‘good’ for getting a better view?
-How CNN could be used on the thumbnails and by using the model how we can predict the labels for the images?
+How CNN could be used on the thumbnails and How CNN works for selecting thumbnails for youtube creators to choose a better thumbnail?
 
 
 ### Modeling Process
@@ -66,7 +68,7 @@ Now we are left with 2015 rows, which means we have the data with YouTube id’s
 
 We have a “generated thumbnails” folder which contains generated thumbnails based on the cleaned merged data for 2015 rows. We will use those for testing because those images are not classified based on the YouTube channels. 
 
-We will train images from the Kaggle (https://www.kaggle.com/datasets/praneshmukhopadhyay/youtube-thumbnail-dataset/data) and generated thumbnails (https://drive.google.com/drive/folders/1hmNbjIaTWUoHGVL1fUmsXfapLFhcALYj). In the thumbnails folder, we have 91 folders each one presenting channels and those channels contain the images for their respective channels.
+We will train images from the Kaggle (https://www.kaggle.com/datasets/praneshmukhopadhyay/youtube-thumbnail-dataset/data) and generated thumbnails (https://drive.google.com/drive/folders/1hmNbjIaTWUoHGVL1fUmsXfapLFhcALYj). In the thumbnails folder, we have 21 categories each one presenting channels related to the category and those channels contain the images for their respective channels.
 
 Using the transfer learning, we will follow the below steps:
 
