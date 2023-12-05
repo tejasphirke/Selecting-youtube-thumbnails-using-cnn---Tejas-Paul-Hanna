@@ -6,7 +6,7 @@
 
 ### Introduction
 
-We are using a model based on research already done by the CS dept of Stanford University. We are planning to build a model that will select the best thumbnail from the frames of a given video. We are going to train the model with both successful and unsuccessful videos and their respective thumbnails to extract the features that indicate the success of a video. We will differentiate successful vs unsuccessful videos based on the number of views the video acquired. Any video with more than 1M views is considered successful and videos less than 1000 views are considered unsuccessful.
+We are using a model based on research already done by the CS dept of Stanford University. We are planning to build a model that will categorize the thumbnails from the thumbnails of the videos. We are going to train the model using thumbnails of videos. We will differentiate successful vs unsuccessful videos based on the number of views the video acquired. Any video with more than 1M views is considered successful and videos less than 1000 views are considered unsuccessful.
 
 To mitigate the selection bias, we will collect the videos data in the same time frame, randomly build datasets for successful and unsuccessful thumbnails and then we will build a classifier to differentiate between successful and unsuccessful thumbnails. From the learnings of this classification architecture we will build a model that will select thumbnails by choosing from each video the frames that have the highest probability of being good thumbnails.
 
