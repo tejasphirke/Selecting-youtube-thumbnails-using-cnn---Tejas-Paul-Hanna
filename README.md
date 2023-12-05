@@ -32,3 +32,57 @@ How CNN could be used on the thumbnails and by using the model how we can predic
 
 ### Modeling Process
 
+#### Step 1 - Exploration of the data:
+
+We currently have a dataset available with good thumbnails which has the highest number of views and high subscriber counts: 
+
+Our data preparation initially starts with getting the feasible datasets for our project. We got the dataset from kaggle and based on the Youtube API datasets we will get Youtube channels with lower views, as we want to test the lower views dataset. 
+
+Datasets we will be using and the dataset we have: 
+
+- Dataset of good thumbnails as of now, but we are currently scraping at bad thumbnails that have low views
+- Train classifier to distinguish between two categories.
+
+For the dataset available, we have explored the following things:
+
+The dataset contains two files: 
+- One data file named ‘data’ contains all YouTube URLs, channel names, category, titles, views, subscriber counts, year, YouTube ID (by using youtube id we can fetch YouTube video).
+- Second file named ‘metadata’ which contains youtube id, channel name, category and title
+
+Dataset link: 
+https://www.kaggle.com/datasets/praneshmukhopadhyay/youtube-thumbnail-dataset/data
+https://www.kaggle.com/datasets/praneshmukhopadhyay/youtubers-saying-things/data
+
+We have done preprocessing of the dataset:
+
+- Removed unwanted paragraphs, special characters that were present in the data. Removing URLs, and numbers in the dataset. After cleaning the dataset we left with 2048 rows. 
+It is shared with a cleaned dataset file named clean_data_1’ which is a clean dataset. The metadata file contains 2516 rows.
+- We merged two datasets:  data and metadata based on the youtube id named ‘merged_data_metadata’. 
+Now we are left with 2015 rows, which means we have the data with YouTube id’s as well as URLs.
+
+
+#### Step 2 - Pre-Training the thumbnails using transfer learning:
+
+We have a “generated thumbnails” folder which contains generated thumbnails based on the cleaned merged data for 2015 rows. We will use those for testing because those images are not classified based on the YouTube channels. 
+
+We will train images from the Kaggle (https://www.kaggle.com/datasets/praneshmukhopadhyay/youtube-thumbnail-dataset/data). In the thumbnails folder, we have 91 folders each one presenting channels and those channels contain the images for their respective channels.
+
+Using the transfer learning, we will follow the below steps:
+
+1. Pre-training models using VGG16 or inception V3 has not been decided yet.
+2. Remove the final classification layer(s) of the pre-trained model.
+3. Add new layers that match the number of classes in your dataset.
+4. Fine-tune the model on your dataset.
+
+
+#### Step 3 - Tuning the model
+
+We will train the CNN model using tensorflow keras API for image classification. General steps that need to be done:
+
+1. Setting the dimensions for input images to be 224x224 pixels. Using an  ImageDataGenerator to perform data augmentation on the training images. This will include rescaling, shearing, zooming, and horizontal flipping.
+
+2. Creating a generator for the training dataset with specified parameters like target size, batch size, and categorical class mode.
+
+3. Creating a generator for the validation dataset with rescaling as the only augmentation.
+
+4. Setting up a CNN architecture, preparing data generators with augmentation, and training the model on the dataset for image classification.
