@@ -66,7 +66,7 @@ Now we are left with 2015 rows, which means we have the data with YouTube id’s
 
 We have a “generated thumbnails” folder which contains generated thumbnails based on the cleaned merged data for 2015 rows. We will use those for testing because those images are not classified based on the YouTube channels. 
 
-We will train images from the Kaggle (https://www.kaggle.com/datasets/praneshmukhopadhyay/youtube-thumbnail-dataset/data). In the thumbnails folder, we have 91 folders each one presenting channels and those channels contain the images for their respective channels.
+We will train images from the Kaggle (https://www.kaggle.com/datasets/praneshmukhopadhyay/youtube-thumbnail-dataset/data) and generated thumbnails (https://drive.google.com/drive/folders/1hmNbjIaTWUoHGVL1fUmsXfapLFhcALYj). In the thumbnails folder, we have 91 folders each one presenting channels and those channels contain the images for their respective channels.
 
 Using the transfer learning, we will follow the below steps:
 
