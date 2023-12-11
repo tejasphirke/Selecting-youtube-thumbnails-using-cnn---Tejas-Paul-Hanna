@@ -96,7 +96,7 @@ General steps that we proceed:
 
 5. Repeat for VGG16 model
 
-#### Step 4 - Prediction on random thumbnails
+#### Step 3 - Prediction on random thumbnails
 
 With CNN model and VGG16 model, we predicted if the random thumbnails with label matches with our predictions. 
 
