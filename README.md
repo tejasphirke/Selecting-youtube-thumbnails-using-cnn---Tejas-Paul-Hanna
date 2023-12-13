@@ -12,6 +12,9 @@ For training the model, we have popular channels videos with high views – arou
 
 Further steps, we used our initial model onto subcategories of news for getting a prediction on good or bad thumbnail by training category’s good and bad thumbnails.
 
+The below output shows that label is good or bad based.
+![demo_image](https://raw.githubusercontent.com/tejasphirke/Selecting-youtube-thumbnails-using-cnn---Tejas-Paul-Hanna/main/demo_img.jpg)
+
 
 ### Research on the project
 
